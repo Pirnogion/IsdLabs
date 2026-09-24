@@ -1,0 +1,11 @@
+Q=9
+N=1500
+Tv_min=0.9
+Tv_max=1.6
+Tv_dop=0.55
+N_tv=100
+Tp_min=5.0
+Tp_max=10.0
+Tp_dop=15.0
+N_tp=200
+base_criterion=0.98
