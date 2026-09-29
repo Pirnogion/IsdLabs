@@ -1,0 +1,6 @@
+initial_rating=5000
+language_level=2.1
+total_programs=6
+programs_lengths=1,2,3,4,5,6
+programs_errors=0,0,0,1,4,2
+target_program_length=10
