@@ -1,0 +1,5 @@
+max_targets=40
+sampling_rate=22
+input_params=11
+output_params=3
+language_level=1.9

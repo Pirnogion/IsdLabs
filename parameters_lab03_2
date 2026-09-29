@@ -1,0 +1,8 @@
+max_targets=40
+sampling_rate=22
+input_params=11
+output_params=3
+language_level=1.9
+written_programs=3
+incorrect_programs=10
+working_hours=8
