@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      packages: write
 
     steps:
       - uses: actions/checkout@v4
@@ -34,8 +33,3 @@ jobs:
         run: gh release upload "$GITHUB_REF_NAME" target/*-lab*.jar --clobber
         env:
           GH_TOKEN: ${{ github.token }}
-
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn -B deploy -DskipTests -s $GITHUB_WORKSPACE/settings.xml
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
