@@ -3,16 +3,18 @@ package labs.lab02;
 import org.apache.commons.math3.analysis.UnivariateFunction;
 import org.apache.commons.math3.analysis.solvers.BrentSolver;
 
-public class Main {
-    static final int[] X = {
-        4, 13, 10, 5, 8, 1, 6, 7, 4, 9, 5, 2, 3, 8, 6, 3, 2, 3, 94, 5, 12, 8, 28, 3
-    };
+import java.io.IOException;
 
-    static final int n = X.length;
+public class Main {
+    static int[] X;
+    static int n;
     static double sumX;
     static double sumiX;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        X = TestingData.load("parameters_lab02").intervals();
+        n = X.length;
+
         sumX = 0;
         sumiX = 0;
         for (int i = 1; i <= n; i++) {
